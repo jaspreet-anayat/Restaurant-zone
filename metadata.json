@@ -1,0 +1,6 @@
+{
+  "name": "RestaurantZone - Hospitality & Restaurant Staffing",
+  "description": "Hire top restaurant and hospitality talent fast and easy with pre-screened candidates delivered in 15 days or less, 100-day replacement guarantee, and specialized recruitment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

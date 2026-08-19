@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: local('Gilroy Medium'), local('Gilroy-Medium'), local('Gilroy');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Gilroy Medium', 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Gilroy Medium', 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  
+  --color-primary-navy: #132930;
+  --color-accent-cyan: #10ACCF;
+  --color-accent-cyan-hover: #0ea1c2;
+  --color-subtext-grey: #DADADA;
+  --color-card-dark: #1C3842;
+}
+
+@layer base {
+  body {
+    font-family: 'Manrope', sans-serif;
+    color: #212529;
+    background-color: #ffffff;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Gilroy Medium', 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  mark {
+    background-color: transparent;
+    color: #10ACCF;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 500;
+  }
+}
+
+/* Continuous Logo Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #132930;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c4f5a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10ACCF;
+}
+
