@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Wine, Utensils, BedDouble, Building2, Users } from 'lucide-react';
 import { SPECIALTIES_DATA } from '../data/mockData';
+import ourSpecialitiesImage from '../assets/images/our-specialities.webp';
 import { SpecialtyItem } from '../types';
 
 interface SpecialtiesSectionProps {
@@ -59,7 +60,7 @@ export const SpecialtiesSection: React.FC<SpecialtiesSectionProps> = ({
               {/* Primary Hospitality Image: Waiter Serving Burger Platters */}
               <div className="relative rounded-[32px] overflow-hidden shadow-2xl bg-slate-900 aspect-[4/3] sm:aspect-[16/11]">
                 <img
-                  src="/images/our-specialities.webp"
+                  src={ourSpecialitiesImage}
                   alt="Hospitality Waiter Serving Customers"
                   className="w-full h-full object-cover object-center"
                   loading="lazy"

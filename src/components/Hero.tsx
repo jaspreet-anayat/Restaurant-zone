@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import hospitalityRecruitingImage from '../assets/images/hospitality-recruiting-solutions.png';
 import Link from './Link';
 
 interface HeroProps {
@@ -13,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenHireModal }) => {
       id="hero"
       className="relative min-h-[660px] sm:min-h-[720px] lg:min-h-[780px] flex flex-col justify-between pt-32 sm:pt-36 lg:pt-40 pb-8 sm:pb-12 overflow-hidden bg-[#132930]"
       style={{
-        backgroundImage: `url('/images/hospitality-recruiting-solutions.png')`,
+        backgroundImage: `url(${hospitalityRecruitingImage})`,
         backgroundPosition: 'center 20%',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
