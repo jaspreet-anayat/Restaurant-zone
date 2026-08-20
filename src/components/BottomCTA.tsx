@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+// import readyToFindImage from '../assets/images/ready-to-find-1.webp';
+import readyToFindImage from '../assets/images/ready-to-find-1.webp';
 import Link from './Link';
 
 interface BottomCTAProps {
@@ -15,7 +17,7 @@ export const BottomCTA: React.FC<BottomCTAProps> = ({ onOpenHireModal }) => {
         <div
           className="relative rounded-[32px] sm:rounded-[44px] overflow-hidden py-16 sm:py-24 px-6 sm:px-12 lg:px-16 text-center shadow-2xl bg-[#0D1F24]"
           style={{
-            backgroundImage: `url('/images/ready-to-find-1.webp')`,
+            backgroundImage: `url(${readyToFindImage})`,
             backgroundPosition: 'center 28%',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',

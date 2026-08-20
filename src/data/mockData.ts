@@ -1,5 +1,8 @@
+import restaurantRecruitingImage from '../assets/images/restaurant-recruiting.webp';
+import hospitalityStaffingImage from '../assets/images/hospitality-staffing-solutions.webp';
+import hireChefImage from '../assets/images/hire-a-chef.jpg-768x512.webp';
+import hospitalityExecutiveImage from '../assets/images/hospitality-executive-search.webp';
 import { StatItem, ReviewItem, ExpertiseItem, SolutionCard, SpecialtyItem } from '../types';
-
 export const STATS_DATA: StatItem[] = [
   {
     id: '1',
@@ -117,7 +120,7 @@ export const EXPERTISE_AREAS: ExpertiseItem[] = [
   {
     id: 'restaurant-recruiting',
     title: 'Restaurant Recruiting',
-    image: '/images/restaurant-recruiting.webp',
+    image: restaurantRecruitingImage,
     description: 'Full-service hiring for independent, multi-unit, and group restaurants across the United States.',
     roles: ['General Manager', 'Assistant GM', 'Kitchen Manager', 'Floor Manager', 'Bar Manager'],
     avgPlacementTime: '12-14 Days',
@@ -125,7 +128,7 @@ export const EXPERTISE_AREAS: ExpertiseItem[] = [
   {
     id: 'hospitality-recruiting',
     title: 'Hospitality Recruiting',
-    image: '/images/hospitality-staffing-solutions.webp',
+    image: hospitalityStaffingImage,
     description: 'End-to-end recruitment for resorts, luxury venues, conference halls, and premier lifestyle destinations.',
     roles: ['Guest Services Manager', 'Front Office Director', 'Events Director', 'Concierge Lead'],
     avgPlacementTime: '14-16 Days',
@@ -133,7 +136,7 @@ export const EXPERTISE_AREAS: ExpertiseItem[] = [
   {
     id: 'hire-a-chef',
     title: 'Hire a Chef',
-    image: '/images/hire-a-chef.webp',
+    image: hireChefImage,
     description: 'Culinary talent headhunting from high-volume lead cooks to Michelin-pedigree Executive Chefs.',
     roles: ['Executive Chef', 'Head Chef', 'Chef de Cuisine', 'Executive Pastry Chef', 'Sous Chef'],
     avgPlacementTime: '14-18 Days',
@@ -149,7 +152,7 @@ export const EXPERTISE_AREAS: ExpertiseItem[] = [
   {
     id: 'hospitality-exec-search',
     title: 'Hospitality Executive Search',
-    image: '/images/hospitality-executive-search.webp',
+    image: hospitalityExecutiveImage,
     description: 'C-Suite and VP level executive placement for leading hotel chains, dining groups, and hospitality conglomerates.',
     roles: ['Chief Executive Officer', 'VP of Operations', 'Director of F&B', 'Chief Marketing Officer', 'Regional Director'],
     avgPlacementTime: '21-30 Days',
